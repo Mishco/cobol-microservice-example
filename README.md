@@ -1,9 +1,5 @@
 
-# Cobol Microservices Example
-
-```bash
-curl -H "Content-Type: application/json" http://127.0.0.1:7707
-````
+# Cobol Microservice Example
 
 ## Running the example Docker image
 
@@ -23,6 +19,19 @@ docker run -it -p 7707:7707 cobol-example bash
 
 ## Test 
 
+### Web browser
+
 Open in web browser: http://localhost:7707/
 
 Correct answer: `{ ok:1, text: "Hello,World from Dockerfile"}`
+
+### CLI 
+
+Test in console: `curl -H "Content-Type: application/json" http://127.0.0.1:7707`
+
+Correct answer: 
+
+```bash
+λ curl -H "Content-Type: application/json" http://127.0.0.1:7707
+{ ok:1, text: "Hello,World from Dockerfile"}
+```
