@@ -21,6 +21,8 @@ docker build -t cobol-example .
 docker run -it -p 7707:7707 cobol-example bash
 ````
 
-````bash
-/usr/bin/php -S 0.0.0.0:7707
-````
+## Test 
+
+Open in web browser: http://localhost:7707/
+
+Correct answer: `{ ok:1, text: "Hello,World from Dockerfile"}`
