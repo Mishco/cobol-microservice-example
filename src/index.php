@@ -47,7 +47,8 @@ case 'GET':
     if (!file_exists ( "/service/JSONTest" )) {
         $_response = '{ ok : 0, text: "Could not find JSONTest, did you compile?" }' ;
     } else {
-        $_response = exec("/service/JSONTest"); // you could also use  backticks
+        // $_response = exec("/service/JSONTest"); // you could also use  backticks
+        $_response = exec("/service/fib");
     }
     break;
 case 'PUT':

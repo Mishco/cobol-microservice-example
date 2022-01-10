@@ -9,6 +9,7 @@ RUN apt-get update && \
 
 COPY  src/* /service/
 COPY  start.sh /service/start.sh
+COPY  run-fib.sh /service/run-fib.sh
 
 EXPOSE 7707
 
@@ -17,4 +18,5 @@ WORKDIR  /service
 # compile .cbl 
 RUN make 
 
-CMD ["./start.sh"]
+# CMD ["./start.sh"]
+CMD [ "./run-fib.sh"]

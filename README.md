@@ -1,10 +1,9 @@
-
 # Cobol Microservice Example
 
 ## Running the example Docker image
 
 ````bash
-docker run -it -p 7707:7707 gregcoleman/cobol-microservice-example bash
+docker run -it -p 7707:7707 cobol-example
 ````
 
 ## Building the example
